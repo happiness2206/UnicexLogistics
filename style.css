@@ -1,0 +1,300 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(252, 252, 252);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+nav {
+  /* background-color: rgb(23, 21, 27); */
+  z-index: 10;
+  /* position: sticky; */
+}
+
+.callus {
+  color: rgb(252, 252, 252);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(/images/shipping.jpg);
+  background-size: cover;
+  /* position: fixed; */
+  margin: 0 auto;
+  height: 90%;
+  /* background-color: var(--dark); */
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in;
+  z-index: 2;
+}
+
+.navbar-collapse{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.hero {
+  height: 90vh;
+  /* background-image: url(/images/truckwithmountainview.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.container {
+  z-index: 2;
+}
+
+.content {
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(255, 140, 140);
+}
+
+.aboutuscontent {
+  min-height: 70vh;
+  display: flex;
+  overflow-x: hidden;
+  /* justify-content: center; */
+}
+
+.aboutuscontent section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.aboutuscontent h1 {
+  font-weight: 700;
+}
+
+.aboutuscontent p {
+  color: rgb(117, 117, 117);
+  line-height: 2rem;
+}
+
+.line{
+  border: 2px solid rgb(255, 140, 140);
+  width: 20%;
+}
+
+.gridcontent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+}
+
+.gridcontent a{
+  color: rgb(255, 140, 140);
+}
+
+.airfreight {
+  position: relative;
+  z-index: 2;
+  background: url(/images/grid2.jpg);
+  background-size: cover;
+  color: #fff;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+
+.oceanfreight {
+  position: relative;
+  z-index: 2;
+  background: url(/images/shippingtothesunset.jpg);
+  background-size: cover;
+  color: #fff;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+.warehouse {
+  position: relative;
+  z-index: 2;
+  background: url(/images/grid1.jpg);
+  background-size: cover;
+  color: #fff;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.logistics {
+  position: relative;
+  z-index: 2;
+  background: url(/images/truckwithmountainview.jpg);
+  background-size: cover;
+  color: #fff;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.airfreight:hover, .oceanfreight:hover, .warehouse:hover, .logistics:hover {
+    transform: scaleY(1.1);
+  }
+
+.airfreight::before,
+.oceanfreight::before,
+.warehouse::before,
+.logistics::before {
+  content: '';
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -3;
+}
+.airfreight::before:hover,
+.oceanfreight::before:hover,
+.warehouse::before:hover,
+.logistics::before:hover {
+
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -3;
+}
+
+.getquote {
+  /* z-index: 5;
+  /* background: url(/images/yellowforklift.png);
+  background-size: cover; */
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background: url(/images/shipping.jpg);
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+   font-weight: 400;
+  -webkit-font-smoothing: antialiased; 
+}
+
+
+/* .formcontent{
+/* margin: 0 auto;
+background-color: rgba(255, 140, 140, 0.2);
+position: relative;
+width: 250px;
+height: 350px;
+top: calc(50% - 175px);
+left: calc(50% - 125px);
+background: inherit;
+border-radius: 2px;
+overflow: hidden;
+}
+.formcontent::after{
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: inherit; 
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: -25px;  
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  filter: blur(10px);
+} */
+
+
+.blurred-box{
+  position: relative;
+  max-width: 450px;
+  max-height: 450px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px); 
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+  /* height: 100%; */
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.blurred-box:after{
+ content: '';
+ width: 600px;
+ height: 400px;
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ right: 0;
+ top: -25px;  
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}
+
+.formcontent{
+  z-index: 2;
+  /* width: 900px; */
+}
+
+@media (max-width: 640px){
+
+  .aboutuscontent{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutuscontent section{
+    line-height: 1rem;
+    width: 100%;
+    
+  }
+  .gridcontent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
