@@ -20,7 +20,17 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg sticky-top">
+     <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="p-0 m-0" href="#">
+          <img
+            src="images/whitelogo.svg"
+            width="30"
+            height="30"
+            alt="logo image"
+            class="logoimagetopnav"
+          />
+          <span class="sr-only">(current)</span></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -30,10 +40,12 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"
+          <span class="navbar-toggler-icon mt-1"
             ><i class="fas fa-bars text-light"></i
           ></span>
         </button>
+
+
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -82,16 +94,45 @@
             </li>
           </ul>
 
-          <div class="callus d-flex justify-content-center">
-            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-
+          <!-- <div class="callus d-flex justify-content-center">
             <a href="tel:23492891999" class="nav-link">
               <i class="fas fa-phone-alt pr-4"></i>Call us at 234801111111</a
             >
-          </div>
+          </div> -->
         </div>
-      </nav>
+      </nav> 
+
+      <!-- <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img
+        src="images/whitelogo.svg"
+        width="30"
+        height="30"
+        alt="logo image"
+        class="logoimage"
+      />
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav col justify-content-around">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shopping Cart</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
 
       <section class="hero">
         <div class="container">
