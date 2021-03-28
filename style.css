@@ -253,7 +253,7 @@ overflow: hidden;
 .blurred-box{
   position: relative;
   max-width: 450px;
-  max-height: 450px;
+  max-height: 650px;
   top: calc(50% - 175px);
   left: calc(50% - 175px); 
   /* display: flex;
@@ -269,7 +269,7 @@ overflow: hidden;
 .blurred-box:after{
  content: '';
  width: 600px;
- height: 400px;
+ height: 700px;
  background: inherit; 
  position: absolute;
  left: -25px;
@@ -283,6 +283,12 @@ overflow: hidden;
 .formcontent{
   z-index: 2;
   /* width: 900px; */
+}
+
+#sendquote{
+  
+  background-color: rgb(255, 140, 140);
+  color: #fff;
 }
 
 @media (max-width: 640px){
@@ -300,4 +306,13 @@ overflow: hidden;
   .gridcontent {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .blurred-box{
+    max-width: 350px;
+    max-height: 550px;
+    top: calc(50% - 275px);
+    left: calc(50% - 160px); 
+
+  }
+  
 }
