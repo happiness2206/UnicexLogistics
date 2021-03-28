@@ -292,6 +292,7 @@ overflow: hidden;
   
   background-color: rgb(255, 140, 140);
   color: #fff;
+  -webkit-appearance: none;
 }
 
 @media (max-width: 991px){
