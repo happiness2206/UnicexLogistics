@@ -29,6 +29,7 @@ header {
   display: flex;
   justify-content: space-around;
   background-image: url(images/shipping.jpg);
+  /* background-attachment: fixed; */
   background-size: cover;
   /* position: fixed; */
   margin: 0 auto;
@@ -165,7 +166,7 @@ header::before {
 .logistics {
   position: relative;
   z-index: 2;
-  background: url(images/truckwithmountainview.jpg);
+  background: url(images/getquote2.jpg);
   background-size: cover;
   color: #fff;
   transition: height 0.5s;
@@ -206,11 +207,13 @@ header::before {
   /* background: url(/images/yellowforklift.png);
   background-size: cover; */
 
+
+  background: url(images/getquote1.jpg);
+  background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  background: url(images/shipping.jpg);
   width: 100%;
   height: 100vh;
   font-family: Arial, Helvetica;
