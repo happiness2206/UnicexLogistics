@@ -94,6 +94,7 @@ header::before {
   min-height: 70vh;
   display: flex;
   overflow-x: hidden;
+  background-color: #e7e8ed;
   /* justify-content: center; */
 }
 
@@ -207,9 +208,6 @@ header::before {
 }
 
 .getquote {
-  /* z-index: 5;
-  /* background: url(/images/yellowforklift.png);
-  background-size: cover; */
 
 
   background: url(images/getquote1.jpg);
@@ -226,44 +224,12 @@ header::before {
 }
 
 
-/* .formcontent{
-/* margin: 0 auto;
-background-color: rgba(255, 140, 140, 0.2);
-position: relative;
-width: 250px;
-height: 350px;
-top: calc(50% - 175px);
-left: calc(50% - 125px);
-background: inherit;
-border-radius: 2px;
-overflow: hidden;
-}
-.formcontent::after{
-  content: '';
-  width: 300px;
-  height: 300px;
-  background: inherit; 
-  position: absolute;
-  left: -25px;
-  right: 0;
-  top: -25px;  
-  bottom: 0;
-  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
-  filter: blur(10px);
-} */
-
-
 .blurred-box{
   position: relative;
   max-width: 450px;
   max-height: 650px;
   top: calc(50% - 175px);
   left: calc(50% - 175px); 
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; */
-  /* height: 100%; */
   background: inherit;
   border-radius: 2px;
   overflow: hidden;
@@ -294,6 +260,171 @@ overflow: hidden;
   color: #fff;
   -webkit-appearance: none;
 }
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+
+}
+
+.counter-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.maincounter {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #192027;
+}
+
+.testimonial-container {
+  border: 2px solid rgb(255, 140, 140);
+  color: #fff;
+  margin: 0px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  font-size: 25px;
+  position: relative;
+}
+
+.reviewscontent{
+  background-color: #192027;
+
+}
+
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  color: rgb(255, 140, 140);
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+
+.footer-big {
+  padding:105px 0 65px 0
+ }
+ .footer-big .footer-widget {
+  margin-bottom:40px
+ }
+ .footer--light {
+  background:#e7e8ed
+ }
+ .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+  color:#898b96
+ }
+ .footer-menu {
+  padding-left:48px
+ }
+ .footer-menu ul li a {
+  font-size:15px;
+  line-height:32px;
+  -webkit-transition:.3s;
+  -o-transition:.3s;
+  transition:.3s
+ }
+ .footer-menu ul li a:hover {
+  color:#5867dd
+ }
+ .footer-menu--1 {
+  width:100%
+ }
+ .footer-widget-title {
+  line-height:42px;
+  margin-bottom:10px;
+  font-size:18px
+ }
+ .mini-footer {
+  background:#192027;
+  text-align:center;
+  padding:32px 0
+ }
+ .mini-footer p {
+  margin:0;
+  line-height:26px;
+  font-size:15px;
+  color:#999
+ }
+ .mini-footer p a {
+  color:#5867dd
+ }
+ .mini-footer p a:hover {
+  color:#34bfa3
+ }
+ .widget-about img {
+  display:block;
+  margin-bottom:30px
+ }
+ .widget-about p {
+  font-weight:400
+ }
+ .widget-about .contact-details {
+  margin:30px 0 0 0
+ }
+ .widget-about .contact-details li {
+  margin-bottom:10px
+ }
+ .widget-about .contact-details li:last-child {
+  margin-bottom:0
+ }
+ .widget-about .contact-details li span {
+  padding-right:12px
+ }
+ .widget-about .contact-details li a {
+  color:#5867dd
+ }
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+
 
 @media (max-width: 991px){
 
@@ -363,5 +494,11 @@ overflow: hidden;
     z-index: 2;
   }
   
+  .maincounter {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
 
 }
