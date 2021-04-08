@@ -305,20 +305,36 @@ header::before {
 }
 
 .testimonial-container {
-  color: #192027;
+  color: #fff;
   margin: 0px auto;
   padding: 50px 80px;
   max-width: 768px;
   font-size: 25px;
   position: relative;
+  z-index: 5;
 }
 
 .reviewscontent {
-  background-color: #e7e8ed;
+  background: url(/images/reviewsimg.jpg);
+  object-fit: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+
+.reviewscontent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
 }
 
 .testimonial {
-  color: #767777;
+  color: #fff;
   font-size: 25px;
   line-height: 26px;
   text-align: justify;
@@ -354,6 +370,13 @@ header::before {
   animation: grow 10s linear infinite;
   transform-origin: left;
 }
+
+/* map */
+/* #mapid {
+  height: 180px;
+
+} */
+/* end */
 
 .footer-big {
   padding: 105px 0 65px 0;
@@ -521,7 +544,7 @@ header::before {
     height: 55px;
     width: 55px;
   }
-  
+
   .user-details h4 {
     font-size: 12px;
   }

@@ -17,6 +17,26 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/animateplus/2.1.1/animateplus.js"
+    integrity="sha512-E8BH0z4vVNsdBOJFGQnLa2uTRG2bPE9D/GYDI6/nwduULGudaA1DPeoSe2DcdwexiG///6EOFPD/m8aLGIDxfA=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+  integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+  crossorigin="anonymous"
+></script> -->
   </head>
   <body>
     <header>
@@ -141,7 +161,7 @@
       </section>
     </header>
 
-    <div class="container-fluid-sm aboutuscontent" id="aboutus">
+    <div class="wow animate__backInDown container-fluid-sm aboutuscontent" id="aboutus">
       <section class="px-5 mx-md-5">
         <h1 class="mt-5 pt-3 pb-0">About Us</h1>
         <hr class="line" />
@@ -152,7 +172,6 @@
           cargo give us the advantage of providing safe, reliable, and
           cost-effective delivery of freight with flexible customer services.
         </p>
-
       </section>
 
       <div class="mt-5">
@@ -160,26 +179,24 @@
           <h1 class="pb-0 text-center pb-3">We Offer</h1>
           <div class="row pt-4">
             <div class="col">
-
               <div class="d-flex flex-column text-center py-3">
-              <i class="fas fa-handshake fa-2x"></i>
-             <p>Personalized Service</p> 
-            </div>
+                <i class="fas fa-handshake fa-2x"></i>
+                <p>Personalized Service</p>
+              </div>
               <div class="d-flex flex-column text-center">
                 <i class="far fa-edit fa-2x"></i>
-             <p>Real-Time Shipment Tracking</p> 
-            </div>
+                <p>Real-Time Shipment Tracking</p>
+              </div>
             </div>
             <div class="col">
-
               <div class="d-flex flex-column text-center py-3">
                 <i class="fas fa-warehouse fa-2x"></i>
-             <p>Excellent Warehouse Facility</p> 
-            </div>
+                <p>Excellent Warehouse Facility</p>
+              </div>
               <div class="d-flex flex-column text-center">
                 <i class="fas fa-truck-loading fa-2x"></i>
-             <p>We Deliver to Your Doorstep</p> 
-            </div>
+                <p>We Deliver to Your Doorstep</p>
+              </div>
             </div>
           </div>
         </div>
@@ -187,7 +204,7 @@
       </div>
     </div>
 
-    <section class="gridcontent container-fluid-sm">
+    <section class="wow animate__backInDown gridcontent container-fluid-sm">
       <div class="airfreight">
         <div class="my-5 pt-5 mx-md-5">
           <i class="fas fa-plane-departure"></i>
@@ -245,7 +262,7 @@
       </div>
     </section>
 
-    <div class="getquote container-fluid-sm" id="getquote">
+    <div class="wow animate__backInDown getquote container-fluid-sm" id="getquote">
       <div class="row blurred-box">
         <form
           action="https://formspree.io/f/xoqppkdo"
@@ -298,7 +315,7 @@
       </form> -->
     </div>
 
-    <div class="maincounter py-5">
+    <div class="wow bounceInUp maincounter py-5">
       <div class="counter-container">
         <i class="fas fa-boxes"></i>
         <div class="counter" data-target="300"></div>
@@ -330,8 +347,9 @@
               <div class="progress-bar mb-4"></div>
               <p class="testimonial">
                 The best logistics company I have ever used, delivery came
-                faster than expected and excellent services. I Recommend Unicorn Express Logistics
-                for anyone that is looking to import goods to Nigeria.
+                faster than expected and excellent services. I Recommend Unicorn
+                Express Logistics for anyone that is looking to import goods to
+                Nigeria.
               </p>
               <div class="user">
                 <img
@@ -348,8 +366,9 @@
             <div class="carousel-item">
               <div class="progress-bar mb-4"></div>
               <p class="testimonial">
-                Unicex is truly outstanding and ahead of its time. I urgently needed to recieve a package
-                from The united states. No other Logistics company could deliver packages as fast as Unicorn
+                Unicex is truly outstanding and ahead of its time. I urgently
+                needed to recieve a package from The united states. No other
+                Logistics company could deliver packages as fast as Unicorn
                 Express Logistics did for me. I strongly Recommend.
               </p>
               <div class="user">
@@ -368,8 +387,8 @@
         </div>
       </div>
     </div>
-    <div class="maincounter py-5">
-
+    <div class="py-5">
+      <div id="mapid"></div>
     </div>
 
     <footer class="footer-area footer--light pt-5">
@@ -495,6 +514,9 @@
         </div>
       </div>
     </footer>
+    <!-- <script>
+      new WOW().init();
+    </script> -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
