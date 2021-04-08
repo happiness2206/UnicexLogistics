@@ -27,19 +27,32 @@ nav {
 header {
   display: flex;
   justify-content: space-around;
-  background-image: url(images/getquote1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  /* position: fixed; */
+
   margin: 0 auto;
   height: 90%;
   /* background-color: var(--dark); */
-  color: #fff;
+  background-color: black;
+  color: black;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in;
   z-index: 2;
+}
+
+/* header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+
+  z-index: 2;
+} */
+
+.headermain{
+  font-size: 70px;
 }
 
 .navbar-collapse {
@@ -65,17 +78,6 @@ header {
   z-index: 3;
 }
 
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  /* background-color: rgba(0, 0, 0, 0.8); */
-  background-color: rgba(255, 140, 140, 0.3);
-  z-index: 2;
-}
 
 .container {
   z-index: 2;
@@ -512,17 +514,9 @@ header::before {
     z-index: 3;
   }
 
-  header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    background-color: rgba(255, 140, 140, 0.4);
-    z-index: 2;
+  .headermain{
+    font-size: 40px;
   }
-
   .maincounter {
     font-size: 20px;
     display: flex;
