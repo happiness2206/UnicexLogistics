@@ -548,6 +548,14 @@ header {
  
 }
 
+.navbarmobile {
+  display: none;
+}
+
+li{
+  list-style: none;
+}
+
 @keyframes grow {
   0% {
     transform: scaleX(0);
@@ -557,6 +565,23 @@ header {
 @media (max-width: 991px) {
   .logoimagetopnav {
     display: block;
+  }
+
+  .navbar-collapse#navbarSupportedContent{
+    align-items: left !important;
+  }
+
+  .navbarmobile {
+    display: block;
+  }
+
+  nav {
+    background-color: black;
+    /* position: sticky; */
+  }
+
+  .navbarleftandright{
+    display: none;
   }
 
   .logoimage {

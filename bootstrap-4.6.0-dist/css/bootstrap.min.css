@@ -4116,7 +4116,6 @@ input[type='submit'].btn-block {
   -ms-flex-positive: 1;
   flex-grow: 1;
   -ms-flex-align: center;
-  align-items: center;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
