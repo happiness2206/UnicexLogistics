@@ -1,3 +1,9 @@
+:root{
+  --red: #A60000;
+  --gray: #37a3a5;
+  --dark: #F39927;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,9 +21,41 @@ html {
 }
 
 nav {
-  background-color: rgba(23, 21, 27, 0.3);
+  background-color: rgba(23, 21, 27, 0.1);
   z-index: 10;
   /* position: sticky; */
+}
+
+a.btnstyling{
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--red);
+  transition: all 0.4s ease-in;
+}
+a.btnstyling:hover{
+  text-decoration: none;
+  background-color: var(--red);
+  color: #fff;
+  border: 2px solid var(--red);
+}
+.navbarleftandright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.rightcontent {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  /* background-color: black;
+  height: 100%; */
 }
 
 .callus {
@@ -27,7 +65,7 @@ nav {
 header {
   display: flex;
   justify-content: space-around;
-
+  overflow-x: hidden;
   margin: 0 auto;
   height: 90%;
   /* background-color: var(--dark); */
@@ -65,19 +103,23 @@ header {
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   /* background-image: url(/images/truckwithmountainview.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   z-index: 3;
 }
 
+.righthero{
+  background-color: #fff;
+  height: 100%;
+}
 
 .container {
   z-index: 2;
@@ -88,7 +130,7 @@ header {
 }
 
 .nav-link:hover {
-  color: rgb(255, 140, 140);
+  color: var(--red);
 }
 
 .aboutuscontent {
@@ -110,17 +152,18 @@ header {
   text-align: justify;
 }
 
-.aboutuscontent h1 {
-  font-weight: 700;
-}
 
-.aboutuscontent p {
+.aboutuscontent p{
   color: rgb(117, 117, 117);
+  line-height: 2rem;
+}
+.hero p {
+  color: rgb(179, 179, 179);
   line-height: 2rem;
 }
 
 .line {
-  border: 2px solid rgb(255, 140, 140);
+  border: 2px solid var(--red);
   width: 20%;
 }
 
@@ -136,8 +179,8 @@ header {
   color: rgb(87, 87, 87);
 }
 
-.bottomaboutuscontent h1 {
-  border-bottom: 4px solid rgb(255, 140, 140);
+.bottomaboutuscontent h3 {
+  border-bottom: 4px solid var(--red);
   margin: 0 auto;
   width: 50%;
 }
@@ -147,8 +190,8 @@ header {
   position: relative;
 }
 
-.gridcontent a {
-  color: rgb(255, 140, 140);
+.readmore{
+  color: var(--red);
 }
 
 .airfreight {
@@ -273,8 +316,12 @@ header {
   /* width: 900px; */
 }
 
+.colorred{
+  color: var(--red);
+}
+
 #sendquote {
-  background-color: rgb(255, 140, 140);
+  background-color: var(--red);
   color: #fff;
   -webkit-appearance: none;
 }
@@ -338,8 +385,9 @@ header {
 .testimonial {
   color: #fff;
   font-size: 25px;
-  line-height: 26px;
-  text-align: justify;
+  line-height: 35px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .user {
@@ -366,7 +414,7 @@ header {
 }
 
 .progress-bar {
-  background-color: rgb(255, 140, 140) !important;
+  background-color: var(--red) !important;
   height: 4px;
   width: 100%;
   animation: grow 10s linear infinite;
@@ -381,7 +429,7 @@ header {
 /* end */
 
 .footer-big {
-  padding: 105px 0 65px 0;
+  padding: 5px 0 5px 0;
 }
 .footer-big .footer-widget {
   margin-bottom: 40px;
@@ -406,7 +454,7 @@ header {
   list-style-type: none;
 }
 .footer-menu ul li a:hover {
-  color: rgb(255, 140, 140);
+  color: var(--red);
 }
 .footer-menu--1 {
   width: 100%;
@@ -428,7 +476,7 @@ header {
   color: #999;
 }
 .mini-footer p a {
-  color: rgb(255, 140, 140);
+  color: var(--red);
 }
 /* .mini-footer p a:hover {
   transform: scaleY(1.2);
@@ -453,7 +501,51 @@ header {
   padding-right: 12px;
 }
 .widget-about .contact-details li a {
-  color: rgb(255, 140, 140);
+  color: var(--red);
+}
+
+/* air freight */
+
+.servicesheader{
+  color: var(--red);
+  font-size: 100px;
+  font-weight: light;
+}
+
+.servicessection ul{
+  list-style-type: none;
+}
+
+
+.servicessection a{
+  color: #898b96;
+}
+.servicessection a:hover{
+  color: #192027 !important;
+  /* font-size: 40px;
+  border-bottom: 2px solid var(--red); */
+}
+.servicessection a:hover{
+  text-decoration: none;
+}
+
+.airfreightdetails h3{
+  font-weight: 300;
+}
+
+.airfreightdetails p{
+  color: #898b96;
+}
+
+.airfreightdetails img{
+  width: 550px;
+  height: 550px;
+}
+.maintext{
+  color: #192027 !important;
+  font-size: 40px;
+  border-bottom: 2px solid var(--red);
+ 
 }
 
 @keyframes grow {
@@ -501,21 +593,21 @@ header {
   }
 
   .hero {
-    height: 60vh;
-    /* background-image: url(/images/truckwithmountainview.jpg); */
+    height: 65vh;
+    background-image: url(/images/header1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 3;
   }
 
   .headermain{
-    font-size: 40px;
+    font-size: 35px;
   }
   .maincounter {
     font-size: 20px;

@@ -21,17 +21,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
-    />
-    <script
+    /> -->
+
+    <!-- <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
-    ></script>
+    ></script> -->
     <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/animateplus/2.1.1/animateplus.js"
     integrity="sha512-E8BH0z4vVNsdBOJFGQnLa2uTRG2bPE9D/GYDI6/nwduULGudaA1DPeoSe2DcdwexiG///6EOFPD/m8aLGIDxfA=="
@@ -44,18 +45,8 @@
 ></script> -->
   </head>
   <body>
-    <header>
+    <header class="p-0 m-0">
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="p-0 m-0" href="#">
-          <img
-            src="images/whitelogo.svg"
-            width="30"
-            height="30"
-            alt="logo image"
-            class="logoimagetopnav"
-          />
-          <span class="sr-only">(current)</span></a
-        >
         <button
           class="navbar-toggler"
           type="button"
@@ -70,10 +61,81 @@
           ></span>
         </button>
 
+        <li class="nav-item">
+          <a class="p-0 m-0" href="#">
+            <img
+              src="images/whitelogo.svg"
+              width="40"
+              height="40"
+              alt="logo image"
+              class=""
+            />
+            <span class="sr-only">(current)</span></a
+          >
+        </li>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <div class="navbarleftandright">
+            <ul class="navbar-nav leftcontent">
+              <li class="nav-item">
+                <a class="p-0 m-0" href="#">
+                  <img
+                    src="images/whitelogo.svg"
+                    width="60"
+                    height="60"
+                    alt="logo image"
+                    class=""
+                  />
+                  <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+  
+            <ul class="navbar-nav rightcontent">
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/aboutus.html">About us</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#contactus">Contact</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#getquote">Get a Quote</a>
+              </li>
+              <li class="nav-item mt-md-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/services/airfreight.html"
+                    >Air Freight</a
+                  >
+                  <a class="dropdown-item" href="/services/oceanfreight.html"
+                    >Ocean Freight</a
+                  >
+                  <a class="dropdown-item" href="#">Expedited</a>
+                </div>
+              </li>
+            </ul>
+  
+            </ul>
+          </div>
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link navbar-brand" href="#">
+              <a class="nav-link navbar-brand" href="/index.html">
                 <img
                   src="images/whitelogo.svg"
                   width="70"
@@ -85,13 +147,16 @@
               >
             </li>
             <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#aboutus">About us</a>
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item mt-md-2">
+              <a class="nav-link" href="/aboutus.html">About us</a>
             </li>
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="#">Location</a>
             </li>
             <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contactus">Contact</a>
             </li>
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="#getquote">Get a Quote</a>
@@ -109,13 +174,16 @@
                 Our Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Air Freight</a>
-                <a class="dropdown-item" href="#">Ocean Freight</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/services/airfreight.html"
+                  >Air Freight</a
+                >
+                <a class="dropdown-item" href="/services/oceanfreight.html"
+                  >Ocean Freight</a
+                >
                 <a class="dropdown-item" href="#">Expedited</a>
               </div>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- <div class="callus d-flex justify-content-center">
             <a href="tel:23492891999" class="nav-link">
@@ -157,20 +225,23 @@
         </div>
       </nav> -->
 
-      <section class="hero">
-        <div class="container">
+      <div class="row p-0 m-0">
+      <section class="hero col px-md-5">
+        <div class="container px-md-5">
           <h1 class="headermain">Unicorn Express Logistics</h1>
-          <p class="">
-            We are a global logistics agency delivering goods and services
-          </p>
-          <div class="callus d-flex justify-content-center">
+          <p class="mb-4">Large enough to handle small enough to care</p>
+          <!-- <div class="callus d-flex">
             <a href="tel:23492891999" class="nav-link">
               <i class="fas fa-phone-alt pr-4"></i>Call us at 234801111111</a
             >
-          </div>
-          <!-- <a href="quote.html" class="btn">Request a Quote</a> -->
+          </div> -->
+          <a href="#getquote" class="mt-3 btnstyling">Request a Quote</a>
         </div>
       </section>
+      <section class="d-none d-md-block hero col">
+<img src="/images/header1.jpg" alt="" class="h-100 img-fluid" style="object-fit: contain;">
+      </section>
+    </div>
     </header>
 
     <div
@@ -178,39 +249,43 @@
       id="aboutus"
     >
       <section class="px-5 mx-md-5">
-        <h1 class="mt-5 pt-3 pb-0">About Us</h1>
+        <h3 class="mt-5 pt-3 pb-0">About Us</h3>
         <hr class="line" />
         <p>
-          We are a Global freight and logistics company operating in Nigeria and
-          Dubai. We are partnered with organizations in major port cities in Nigeria and
-          international cargo hubs all over the world. Our experience in logistics and
-          cargo give us the advantage of providing safe, reliable, and
-          cost-effective delivery of freight with flexible customer services.
+          Unicorn Express Logistics LLC is a contemporary international freight
+          and logistics firm, currently operating from Nigeria and the United
+          Arab Emirates, with partners in major international cargo hubs
+          operating globally. Established by seasoned professionals with decades
+          of experience, Unicorn Express boasts of uniquely tailored inbound and
+          outbound logistics services for but individual and corporate
+          customers.
         </p>
+        <a href="/aboutus.html" class="readmore"
+          >View Details <i class="fa fa-arrow-right"></i>
+        </a>
       </section>
-
       <div class="mt-5">
         <div class="bottomaboutuscontent shadow p-4">
-          <h1 class="pb-0 text-center pb-3">We Offer</h1>
+          <h3 class="pb-0 text-center pb-3">WHY CHOOSE US?</h3>
           <div class="row pt-4">
             <div class="col">
               <div class="d-flex flex-column text-center py-3">
                 <i class="fas fa-handshake fa-2x"></i>
-                <p>Personalized Service</p>
+                <p>Uniquely Tailored Services</p>
               </div>
               <div class="d-flex flex-column text-center">
                 <i class="far fa-edit fa-2x"></i>
-                <p>Real-Time Shipment Tracking</p>
+                <p>Real-Time Shipment Updates</p>
               </div>
             </div>
             <div class="col">
               <div class="d-flex flex-column text-center py-3">
                 <i class="fas fa-warehouse fa-2x"></i>
-                <p>Excellent Warehouse Facility</p>
+                <p>Up-to-date infrastructure and Technology</p>
               </div>
               <div class="d-flex flex-column text-center">
                 <i class="fas fa-truck-loading fa-2x"></i>
-                <p>We Deliver to Your Doorstep</p>
+                <p>Doorstep Delivery</p>
               </div>
             </div>
           </div>
@@ -229,7 +304,7 @@
             clients’ business needs. A sense of urgency is a most in the air
             freight industry,
           </p>
-          <a href="#" class="readmore"
+          <a href="/services/airfreight.html" class="readmore"
             >View Details <i class="fa fa-arrow-right"></i>
           </a>
         </div>
@@ -405,8 +480,19 @@
         </div>
       </div>
     </div>
-    <div class="py-5">
-      <div id="mapid"></div>
+    <div class="container-fluid-sm py-5 px-5">
+      <div id="contactus mt-4">
+        <h4>Want to discuss how we can work together?</h4>
+        <hr class="line" />
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h1 class="text-uppercase">Get in touch</h1>
+          </div>
+          <div class="col-md-6">
+            <h1 class="text-uppercase">Our Locations</h1>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer-area footer--light pt-5">
@@ -540,8 +626,14 @@
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+
+    <script src="path/to/particles.min.js"></script>
     <script src="/jquery-3.6.0.min.js"></script>
     <script src="/script.js"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
+    crossorigin=""
+  ></script> -->
   </body>
 </html>
