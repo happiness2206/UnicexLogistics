@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
@@ -292,7 +293,7 @@
       <div class="row p-0 m-0">
       <section class="hero col px-md-5">
         <div class="container px-md-5">
-          <h1 class="headermain">Unicorn Express Logistics</h1>
+          <div class="headermain">Unicorn Express Logistics</div>
           <p class="mb-4">Large enough to handle small enough to care</p>
           <!-- <div class="callus d-flex">
             <a href="tel:23492891999" class="nav-link">
@@ -303,7 +304,7 @@
         </div>
       </section>
       <section class="d-none d-md-block hero col">
-<img src="/images/header1.jpg" alt="" class="h-100 img-fluid" style="object-fit: contain;">
+<img src="/images/header1.jpg" alt="" class="h-100 img-fluid uk-animation-kenburns" style="object-fit: contain; overflow: hidden;">
       </section>
     </div>
     </header>
@@ -312,10 +313,10 @@
       class="wow animate__backInDown container-fluid-sm aboutuscontent"
       id="aboutus"
     >
-      <section class="px-5 mx-md-5">
-        <h3 class="mt-5 pt-3 pb-0">About Us</h3>
+      <section class="uk-animation-fade px-5 mx-md-5">
+        <div class="h2 mt-5 pt-3 pb-0">About Us</div>
         <hr class="line" />
-        <p>
+        <p class="uk-animation-slide-left-medium">
           Unicorn Express Logistics LLC is a contemporary international freight
           and logistics firm, currently operating from Nigeria and the United
           Arab Emirates, with partners in major international cargo hubs
@@ -328,9 +329,9 @@
           >View Details <i class="fa fa-arrow-right"></i>
         </a>
       </section>
-      <div class="mt-5">
+      <div class="mt-5 uk-animation-slide-right-medium">
         <div class="bottomaboutuscontent shadow p-4">
-          <h3 class="pb-0 text-center pb-3">WHY CHOOSE US?</h3>
+          <div class="h2 pb-0 text-center pb-3">WHY CHOOSE US?</div>
           <div class="row pt-4">
             <div class="col">
               <div class="d-flex flex-column text-center py-3">
@@ -362,7 +363,7 @@
       <div class="airfreight">
         <div class="my-5 pt-5 mx-md-5">
           <i class="fas fa-plane-departure"></i>
-          <h2>Air Freight</h2>
+          <div class="h2">Air Freight</div>
           <p>
             We offer air freight forwarding service designed to align with our
             clients’ business needs. A sense of urgency is a most in the air
@@ -376,7 +377,7 @@
       <div class="oceanfreight">
         <div class="my-5 pt-5 mx-5">
           <i class="fas fa-ship"></i>
-          <h2>Ocean Freight</h2>
+          <div class="h2">Ocean Freight</div>
           <p>
             We provide excellent services with overall savings by combining all
             economic benefits in offering cost effective shipping solutions for
@@ -390,7 +391,7 @@
       <div class="warehouse">
         <div class="my-5 pt-5 mx-5">
           <i class="fas fa-warehouse"></i>
-          <h2>Warehousing</h2>
+          <div class="h2">Warehousing</div>
           <p>
             Safty and protection of our customers' cargo is our top priority,
             that is why we provide strategic benefits of warehousing facilities
@@ -404,7 +405,7 @@
       <div class="logistics">
         <div class="my-5 pt-5 mx-5">
           <i class="fas fa-boxes"></i>
-          <h2>Logistics</h2>
+          <div class="h2">Logistics</div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
             earum, iure Corrupti excepturi ducimus doloremque dolorum
@@ -417,7 +418,7 @@
     </section>
 
     <div
-      class="wow animate__backInDown getquote container-fluid-sm"
+      class=" uk-animation-shake getquote container-fluid-sm"
       id="getquote"
     >
       <div class="row blurred-box">
@@ -426,7 +427,8 @@
           class="formcontent p-5 w-100"
           method="POST"
         >
-          <h2 class="text-center">Get A Quote</h2>
+          <div class="h2 text-center">Get A Quote</div>
+          <hr class="line text-center">
           <div class="forminputs">
             <label for="nameinput">Name</label>
             <input type="text" class="form-control" name="message" />
@@ -472,7 +474,7 @@
       </form> -->
     </div>
 
-    <div class="wow bounceInUp maincounter py-5">
+    <div class="uk-animation-slide-bottom maincounter py-5">
       <div class="counter-container">
         <i class="fas fa-boxes"></i>
         <div class="counter" data-target="300"></div>
@@ -562,12 +564,12 @@
     <footer class="footer-area footer--light pt-5">
       <div class="footer-big">
         <!-- start .container -->
-        <div class="container">
-          <div class="row">
+        <div class="container-fluid">
+          <div class="row px-5">
             <div class="col-md-3 col-sm-12">
               <div class="footer-widget">
-                <div class="widget-about">
-                  <img src="images/unicex2.png" alt="" class="img-fluid" />
+                <div class="">
+                  <img src="images/unicex2.png" alt="" class="img-fluid text-center" width="100px" height="100px" />
                   <ul class="contact-details">
                     <li>
                       <span class="icon-earphones"></span> Call Us:
@@ -588,7 +590,7 @@
             <div class="col-md-3 col-sm-4">
               <div class="footer-widget">
                 <div class="footer-menu footer-menu--1">
-                  <h4 class="footer-widget-title">Quick Links</h4>
+                  <div class="ml-3 footer-widget-title">Quick Links</div>
                   <ul>
                     <li>
                       <a href="#">Home</a>
@@ -613,7 +615,7 @@
             <div class="col-md-3 col-sm-4">
               <div class="footer-widget">
                 <div class="footer-menu">
-                  <h4 class="footer-widget-title">Company</h4>
+                  <div class="ml-3 footer-widget-title">Company</div>
                   <ul>
                     <li>
                       <a href="#">About Us</a>
@@ -635,7 +637,7 @@
             <div class="col-md-3 col-sm-4">
               <div class="footer-widget">
                 <div class="footer-menu no-padding">
-                  <h4 class="footer-widget-title">Services</h4>
+                  <div class="ml-3 footer-widget-title">Services</div>
                   <ul>
                     <li>
                       <a href="#">Air Freight</a>
@@ -695,6 +697,9 @@
     <script src="/jquery-3.6.0.min.js"></script>
     <script src="/script.js"></script>
     <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
     <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
     crossorigin=""
