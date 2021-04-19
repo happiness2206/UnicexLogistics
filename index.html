@@ -304,16 +304,16 @@
         </div>
       </section>
       <section class="d-none d-md-block hero col">
-<img src="/images/header1.jpg" alt="" class="h-100 img-fluid uk-animation-kenburns" style="object-fit: contain; overflow: hidden;">
+<img src="/images/header1.jpg" alt="" class="h-100 img-fluid" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" style="object-fit: contain; overflow: hidden;">
       </section>
     </div>
     </header>
 
     <div
-      class="wow animate__backInDown container-fluid-sm aboutuscontent"
+      class="container-fluid-sm aboutuscontent"
       id="aboutus"
     >
-      <section class="uk-animation-fade px-5 mx-md-5">
+      <section class="px-5 mx-md-5" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
         <div class="h2 mt-5 pt-3 pb-0">About Us</div>
         <hr class="line" />
         <p class="uk-animation-slide-left-medium">
@@ -329,7 +329,7 @@
           >View Details <i class="fa fa-arrow-right"></i>
         </a>
       </section>
-      <div class="mt-5 uk-animation-slide-right-medium">
+      <div class="mt-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
         <div class="bottomaboutuscontent shadow p-4">
           <div class="h2 pb-0 text-center pb-3">WHY CHOOSE US?</div>
           <div class="row pt-4">
@@ -359,7 +359,7 @@
       </div>
     </div>
 
-    <section class="wow animate__backInDown gridcontent container-fluid-sm">
+    <section class="gridcontent container-fluid-sm" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
       <div class="airfreight">
         <div class="my-5 pt-5 mx-md-5">
           <i class="fas fa-plane-departure"></i>
@@ -418,7 +418,8 @@
     </section>
 
     <div
-      class=" uk-animation-shake getquote container-fluid-sm"
+      class="getquote container-fluid-sm"
+      uk-scrollspy="cls: uk-animation-shake; repeat: true"
       id="getquote"
     >
       <div class="row blurred-box">
@@ -474,7 +475,7 @@
       </form> -->
     </div>
 
-    <div class="uk-animation-slide-bottom maincounter py-5">
+    <div class="uk-animation-slide-bottom maincounter py-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
       <div class="counter-container">
         <i class="fas fa-boxes"></i>
         <div class="counter" data-target="300"></div>
@@ -552,10 +553,24 @@
         <hr class="line" />
         <div class="row mt-5">
           <div class="col-md-6">
-            <h1 class="text-uppercase">Get in touch</h1>
+            <p class="h2">Get in touch</p>
           </div>
           <div class="col-md-6">
-            <h1 class="text-uppercase">Our Locations</h1>
+            <div class="container">
+              <div>
+                <p class="h2">Subscribe to our news letter</p>
+              </div>
+              <h6 class="font-alt">Get the latest updates delivered to your Email address</h6>
+              <br><br>
+              <form class="form-subscribe" action="#">
+                <div class="input-group">
+                  <input type="text" class="form-control input-lg" placeholder="Email address">
+                  <span class="input-group-btn">
+                    <button class="btn btn-lg" type="submit" >Subscribe</button>
+                  </span>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

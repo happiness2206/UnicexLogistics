@@ -17,10 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -34,18 +35,8 @@
     ></script>
   </head>
   <body>
-    <header class="bg-white">
+    <header>
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="p-0 m-0" href="#">
-          <img
-            src="/images/whitelogo.svg"
-            width="30"
-            height="30"
-            alt="logo image"
-            class="logoimagetopnav"
-          />
-          <span class="sr-only">(current)</span></a
-        >
         <button
           class="navbar-toggler"
           type="button"
@@ -60,12 +51,147 @@
           ></span>
         </button>
 
+        <li class="nav-item">
+          <a class="" href="#">
+            <img
+              src="/images/whitelogo.svg"
+              width="40"
+              height="40"
+              alt="logo image"
+              class=""
+            />
+            <span class="sr-only">(current)</span></a
+          >
+        </li>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <div class="navbarleftandright">
+            <ul class="navbar-nav leftcontent">
+              <!-- <li class="nav-item">
+                <a class="p-0 m-0" href="#">
+                  <img
+                    src="images/whitelogo.svg"
+                    width="60"
+                    height="60"
+                    alt="logo image"
+                    class=""
+                  />
+                  <span class="sr-only">(current)</span></a
+                >
+              </li> -->
+            </ul>
+  
+            <ul class="navbar-nav rightcontent">
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/aboutus.html">About us</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#contactus">Contact</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#getquote">Get a Quote</a>
+              </li>
+              <li class="nav-item mt-md-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/services/airfreight.html"
+                    >Air Freight</a
+                  >
+                  <a class="dropdown-item" href="/services/oceanfreight.html"
+                    >Ocean Freight</a
+                  >
+                  <a class="dropdown-item" href="#">Expedited</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+            <ul class="navbarmobile">
+              <div class="navitemdropdownspacing">
+                <div class="navitemdropdowns w-100" id="accordionExample">
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="/aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="#">Location</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="#contactus">Contact</a>
+                  </li>
+                  <li class="nav-item mt-md-2 mb-0 pb-0">
+                    <a class="nav-link" href="#getquote">Get a Quote</a>
+                  </li>
+                  <li class="nav-item mt-0 pt-0">
+                    <div class="p-o m-0">
+                      <div id="dropdowncourseheadingFour">
+                        <p>
+                          <a
+                            class="nav-link p-0 m-0 d-flex text-light w-100"
+                            data-toggle="collapse"
+                            data-target="#dropdowncoursecollapseFive"
+                            aria-expanded="false"
+                            aria-controls="dropdowncoursecollapseFive"
+                          >
+                            <div
+                              class="d-flex text-light w-100"
+                            >
+                              <p class="pl-3">Our Services</p>
+                              <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i>
+                            </div>
+                          </a>
+                        </p>
+                      </div>
+                      <div
+                        class="collapse ml-5 pl-1"
+                        id="dropdowncoursecollapseFive"
+                        aria-labelledby="dropdowncourseheadingFive"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="d-flex flex-column">
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+    
+                </div>
+              </div>
+            </ul>
+          </div>
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link navbar-brand" href="#">
+              <a class="nav-link navbar-brand" href="/index.html">
                 <img
-                  src="/images/whitelogo.svg"
+                  src="images/whitelogo.svg"
                   width="70"
                   height="50"
                   alt="logo image"
@@ -78,7 +204,7 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#aboutus">About us</a>
+              <a class="nav-link" href="/aboutus.html">About us</a>
             </li>
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="#">Location</a>
@@ -102,13 +228,16 @@
                 Our Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Air Freight</a>
-                <a class="dropdown-item" href="#">Ocean Freight</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/services/airfreight.html"
+                  >Air Freight</a
+                >
+                <a class="dropdown-item" href="/services/oceanfreight.html"
+                  >Ocean Freight</a
+                >
                 <a class="dropdown-item" href="#">Expedited</a>
               </div>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- <div class="callus d-flex justify-content-center">
             <a href="tel:23492891999" class="nav-link">
@@ -117,17 +246,16 @@
           </div> -->
         </div>
       </nav>
-      <!-- <section class="hero text-dark" style="height: 50vh;">
+      <section class="heroaboutus">
         <div class="container">
-          <h1 class="headermain">About Us</h1>
+          <p class="h1 headermain uk-animation-fade">About Us</p>
           <p class="">Large enough to handle small enough to care</p>
+          <!-- <a href="quote.html" class="btn">Request a Quote</a> -->
         </div>
-      </section> -->
-    </header>
-    <div class="container-fluid-sm aboutuscontent" style="background-color: #192027;">
-      <section class="px-5 mx-md-5" style="color: #fff;">
-        <h3 class="mt-5 pt-3 pb-0">About Us</h3>
-        <hr class="line" />
+      </section>
+    </header> 
+    <div class="container-fluid-sm aboutuscontentmain">
+      <!-- <section class="px-5 mx-md-5" style="color: #fff;">
         <p class="text-white">
           Unicorn Express Logistics LLC is a contemporary international freight
           and logistics firm, currently operating from Nigeria and the United
@@ -152,9 +280,44 @@
           via increased time and cost savings, thus, help develop your own
           logistics value chain.
         </p>
-      </section>
-      <div class="mt-5 w-25">
-        <img src="images/yellowforklift.png" alt="" />
+      </section> -->
+
+      <div class="px-5 mx-5">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="text-dark">
+                  Unicorn Express Logistics LLC is a contemporary international freight
+                  and logistics firm, currently operating from Nigeria and the United
+                  Arab Emirates, with partners in major international cargo hubs
+                  operating globally. Established by seasoned professionals with decades
+                  of experience, Unicorn Express boasts of uniquely tailored inbound and
+                  outbound logistics services for but individual and corporate
+                  customers.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-dark">
+                  Leveraging on experienced staff, a robust network of service partners
+                  as well as employing the latest and up to date technology, we ensure
+                  customer satisfaction by providing personalized customer services and
+                  unparalleled service, tailored to meet the unique demands and desires
+                  of our customers. Our services are uniquely tailored to fit your
+                  strategies and help in achieving your business goals and objectives.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-dark">
+                  Leveraging on experienced staff, a robust network of service partners
+                  as well as employing the latest and up to date technology, we ensure
+                  customer satisfaction by providing personalized customer services and
+                  unparalleled service, tailored to meet the unique demands and desires
+                  of our customers. Our services are uniquely tailored to fit your
+                  strategies and help in achieving your business goals and objectives.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -327,6 +490,9 @@
       <script src="/jquery-3.6.0.min.js"></script>
       <script src="/script.js"></script>
       <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+          <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
     </body>
   </html>
   

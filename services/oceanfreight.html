@@ -35,17 +35,7 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="p-0 m-0" href="#">
-          <img
-            src="/images/whitelogo.svg"
-            width="30"
-            height="30"
-            alt="logo image"
-            class="logoimagetopnav"
-          />
-          <span class="sr-only">(current)</span></a
-        >
+      <nav class="navbar navbar-expand-lg fixed-top">
         <button
           class="navbar-toggler"
           type="button"
@@ -60,12 +50,147 @@
           ></span>
         </button>
 
+        <li class="nav-item">
+          <a class="" href="#">
+            <img
+              src="/images/whitelogo.svg"
+              width="40"
+              height="40"
+              alt="logo image"
+              class=""
+            />
+            <span class="sr-only">(current)</span></a
+          >
+        </li>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <div class="navbarleftandright">
+            <ul class="navbar-nav leftcontent">
+              <!-- <li class="nav-item">
+                <a class="p-0 m-0" href="#">
+                  <img
+                    src="images/whitelogo.svg"
+                    width="60"
+                    height="60"
+                    alt="logo image"
+                    class=""
+                  />
+                  <span class="sr-only">(current)</span></a
+                >
+              </li> -->
+            </ul>
+  
+            <ul class="navbar-nav rightcontent">
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/aboutus.html">About us</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#contactus">Contact</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#getquote">Get a Quote</a>
+              </li>
+              <li class="nav-item mt-md-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/services/airfreight.html"
+                    >Air Freight</a
+                  >
+                  <a class="dropdown-item" href="/services/oceanfreight.html"
+                    >Ocean Freight</a
+                  >
+                  <a class="dropdown-item" href="#">Expedited</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+            <ul class="navbarmobile">
+              <div class="navitemdropdownspacing">
+                <div class="navitemdropdowns w-100" id="accordionExample">
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="/aboutus.html">About us</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="#">Location</a>
+                  </li>
+                  <li class="nav-item mt-md-2">
+                    <a class="nav-link" href="#contactus">Contact</a>
+                  </li>
+                  <li class="nav-item mt-md-2 mb-0 pb-0">
+                    <a class="nav-link" href="#getquote">Get a Quote</a>
+                  </li>
+                  <li class="nav-item mt-0 pt-0">
+                    <div class="p-o m-0">
+                      <div id="dropdowncourseheadingFour">
+                        <p>
+                          <a
+                            class="nav-link p-0 m-0 d-flex text-light w-100"
+                            data-toggle="collapse"
+                            data-target="#dropdowncoursecollapseFive"
+                            aria-expanded="false"
+                            aria-controls="dropdowncoursecollapseFive"
+                          >
+                            <div
+                              class="d-flex text-light w-100"
+                            >
+                              <p class="pl-3">Our Services</p>
+                              <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i>
+                            </div>
+                          </a>
+                        </p>
+                      </div>
+                      <div
+                        class="collapse ml-5 pl-1"
+                        id="dropdowncoursecollapseFive"
+                        aria-labelledby="dropdowncourseheadingFive"
+                        data-parent="#accordionExample"
+                      >
+                        <div class="d-flex flex-column">
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a
+                          >
+                          <a class="text-light py-2" href="#"
+                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+    
+                </div>
+              </div>
+            </ul>
+          </div>
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link navbar-brand" href="/index.html">
                 <img
-                  src="/images/whitelogo.svg"
+                  src="images/whitelogo.svg"
                   width="70"
                   height="50"
                   alt="logo image"
@@ -75,10 +200,10 @@
               >
             </li>
             <li class="nav-item mt-md-2">
-                <a class="nav-link" href="/index.html">Home</a>
-              </li>
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
             <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#aboutus">About us</a>
+              <a class="nav-link" href="/aboutus.html">About us</a>
             </li>
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="#">Location</a>
@@ -102,13 +227,16 @@
                 Our Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Air Freight</a>
-                <a class="dropdown-item" href="#">Ocean Freight</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/services/airfreight.html"
+                  >Air Freight</a
+                >
+                <a class="dropdown-item" href="/services/oceanfreight.html"
+                  >Ocean Freight</a
+                >
                 <a class="dropdown-item" href="#">Expedited</a>
               </div>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- <div class="callus d-flex justify-content-center">
             <a href="tel:23492891999" class="nav-link">
