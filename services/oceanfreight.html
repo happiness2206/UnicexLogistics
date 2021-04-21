@@ -1,72 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Freight</title>
-    <script
-    src="https://kit.fontawesome.com/0da91a7850.js"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="/style.css"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocean Freight</title>
+  <script src="https://kit.fontawesome.com/0da91a7850.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""
-  />
-  <script
-    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""
-  ></script>
+    crossorigin="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
 </head>
+
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon mt-1"
-            ><i class="fas fa-bars text-light"></i
-          ></span>
-        </button>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-1"><i class="fas fa-bars text-light"></i></span>
+      </button>
 
-        <li class="nav-item">
-          <a class="" href="#">
-            <img
-              src="/images/whitelogo.svg"
-              width="40"
-              height="40"
-              alt="logo image"
-              class=""
-            />
-            <span class="sr-only">(current)</span></a
-          >
-        </li>
+      <li class="nav-item">
+        <a class="" href="#">
+          <img src="/images/whitelogo.svg" width="40" height="40" alt="logo image" class="" />
+          <span class="sr-only">(current)</span></a>
+      </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbarleftandright">
-            <ul class="navbar-nav leftcontent">
-              <!-- <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbarleftandright">
+          <ul class="navbar-nav leftcontent">
+            <!-- <li class="nav-item">
                 <a class="p-0 m-0" href="#">
                   <img
                     src="images/whitelogo.svg"
@@ -78,127 +49,9 @@
                   <span class="sr-only">(current)</span></a
                 >
               </li> -->
-            </ul>
-  
-            <ul class="navbar-nav rightcontent">
-              <li class="nav-item mt-md-2">
-                <a class="nav-link" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item mt-md-2">
-                <a class="nav-link" href="/aboutus.html">About us</a>
-              </li>
-              <li class="nav-item mt-md-2">
-                <a class="nav-link" href="#">Location</a>
-              </li>
-              <li class="nav-item mt-md-2">
-                <a class="nav-link" href="#contactus">Contact</a>
-              </li>
-              <li class="nav-item mt-md-2">
-                <a class="nav-link" href="#getquote">Get a Quote</a>
-              </li>
-              <li class="nav-item mt-md-2 dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Our Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/services/airfreight.html"
-                    >Air Freight</a
-                  >
-                  <a class="dropdown-item" href="/services/oceanfreight.html"
-                    >Ocean Freight</a
-                  >
-                  <a class="dropdown-item" href="#">Expedited</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-            <ul class="navbarmobile">
-              <div class="navitemdropdownspacing">
-                <div class="navitemdropdowns w-100" id="accordionExample">
-                  <li class="nav-item mt-md-2">
-                    <a class="nav-link" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item mt-md-2">
-                    <a class="nav-link" href="/aboutus.html">About us</a>
-                  </li>
-                  <li class="nav-item mt-md-2">
-                    <a class="nav-link" href="#">Location</a>
-                  </li>
-                  <li class="nav-item mt-md-2">
-                    <a class="nav-link" href="#contactus">Contact</a>
-                  </li>
-                  <li class="nav-item mt-md-2 mb-0 pb-0">
-                    <a class="nav-link" href="#getquote">Get a Quote</a>
-                  </li>
-                  <li class="nav-item mt-0 pt-0">
-                    <div class="p-o m-0">
-                      <div id="dropdowncourseheadingFour">
-                        <p>
-                          <a
-                            class="nav-link p-0 m-0 d-flex text-light w-100"
-                            data-toggle="collapse"
-                            data-target="#dropdowncoursecollapseFive"
-                            aria-expanded="false"
-                            aria-controls="dropdowncoursecollapseFive"
-                          >
-                            <div
-                              class="d-flex text-light w-100"
-                            >
-                              <p class="pl-3">Our Services</p>
-                              <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i>
-                            </div>
-                          </a>
-                        </p>
-                      </div>
-                      <div
-                        class="collapse ml-5 pl-1"
-                        id="dropdowncoursecollapseFive"
-                        aria-labelledby="dropdowncourseheadingFive"
-                        data-parent="#accordionExample"
-                      >
-                        <div class="d-flex flex-column">
-                          <a class="text-light py-2" href="#"
-                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a
-                          >
-                          <a class="text-light py-2" href="#"
-                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a
-                          >
-                          <a class="text-light py-2" href="#"
-                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a
-                          >
-                          <a class="text-light py-2" href="#"
-                            ><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-    
-                </div>
-              </div>
-            </ul>
-          </div>
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link navbar-brand" href="/index.html">
-                <img
-                  src="images/whitelogo.svg"
-                  width="70"
-                  height="50"
-                  alt="logo image"
-                  class="logoimage"
-                />
-                <span class="sr-only">(current)</span></a
-              >
-            </li>
+          </ul>
+
+          <ul class="navbar-nav rightcontent">
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="/index.html">Home</a>
             </li>
@@ -215,43 +68,246 @@
               <a class="nav-link" href="#getquote">Get a Quote</a>
             </li>
             <li class="nav-item mt-md-2 dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Our Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/services/airfreight.html"
-                  >Air Freight</a
-                >
-                <a class="dropdown-item" href="/services/oceanfreight.html"
-                  >Ocean Freight</a
-                >
+                <a class="dropdown-item" href="/services/airfreight.html">Air Freight</a>
+                <a class="dropdown-item" href="/services/oceanfreight.html">Ocean Freight</a>
                 <a class="dropdown-item" href="#">Expedited</a>
               </div>
             </li>
-          </ul> -->
+          </ul>
+        </div>
+        <ul class="navbarmobile">
+          <div class="navitemdropdownspacing">
+            <div class="navitemdropdowns w-100" id="accordionExample">
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="/aboutus.html">About us</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item mt-md-2">
+                <a class="nav-link" href="#contactus">Contact</a>
+              </li>
+              <li class="nav-item mt-md-2 mb-0 pb-0">
+                <a class="nav-link" href="#getquote">Get a Quote</a>
+              </li>
+              <li class="nav-item mt-0 pt-0">
+                <div class="p-o m-0">
+                  <div id="dropdowncourseheadingFour">
+                    <p>
+                      <a class="nav-link p-0 m-0 d-flex text-light w-100" data-toggle="collapse"
+                        data-target="#dropdowncoursecollapseFive" aria-expanded="false"
+                        aria-controls="dropdowncoursecollapseFive">
+                        <div class="d-flex text-light w-100">
+                          <p class="pl-3">Our Services</p>
+                          <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="collapse ml-5 pl-1" id="dropdowncoursecollapseFive"
+                    aria-labelledby="dropdowncourseheadingFive" data-parent="#accordionExample">
+                    <div class="d-flex flex-column">
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a>
+                      <a class="text-light py-2" href="/services/oceanfreight.html"><i
+                          class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a>
+                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-          <!-- <div class="callus d-flex justify-content-center">
-            <a href="tel:23492891999" class="nav-link">
-              <i class="fas fa-phone-alt pr-4"></i>Call us at 234801111111</a
-            >
-          </div> -->
+            </div>
+          </div>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <section class="heroaboutus">
+      <div class="container text-center pt-5" uk-scrollspy="cls: uk-animation-slide-fade; repeat: true">
+        <p class="h1">Services</p>
+        <!-- <p class="">Large enough to handle small enough to care</p> -->
+        <!-- <a href="quote.html" class="btn">Request a Quote</a> -->
+      </div>
+    </section>
+  </header>
+  <div class="container-fluid pl-5 ml-3 servicessection">
+    <!-- <h1 class="servicesheader text-center">Services</h1> -->
+    <div class="row border-bottom servicestop">
+      <ul class="col-md-2 p-0 m-0" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+        <li class="py-4">
+          <a href="airfreight.html" class="pb-3">Air Frieght</a>
+        </li>
+        <li class="py-4"><a href="#" class="maintext">Ocean Freight</a></li>
+        <li class="py-4"><a href="#">Warehousing</a></li>
+        <li class="py-4"><a href="#">Logistics</a></li>
+      </ul>
+      <div class="col-md-4 px-5 text-justify py-5 border-left"
+        uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+        <!-- <h6>Air Freight</h6> -->
+        <p class="paragraphconstant">
+          We offer both FCL (Full Container Load) and LCL (Less than Container Load) shipping services to suit the needs
+          of our various customers. A number of factors differentiate between both options and we’ve gone a step further
+          to assist you in making the optimal choice for your shipment.
+        </p>
+      </div>
+      <div class="col p-0 m-0" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+        <img src="/images/getquote1.jpg" alt="" class="img-fluid" height="800"/>
+      </div>
+    </div>
+    <!-- <div class="col-md-3 p-0 m-0 text-justify">
+          <h6>Air Freight</h6>
+          <p>
+            We provide superb air freight services by leveraging premium
+            partnerships with airlines. We analyze each shipping request and
+            provide a logistics plan tailored to your needs. Thus, providing an
+            all-encompassing service including collection, clearance and
+            delivery to your doorstep.
+          </p>
+        </div> -->
+    <div class="airfreightdetails py-5 mt-5">
+      <div class="text-center" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">
+        <!-- <i class="fas fa-exclamation-triangle fa-4x colorred"></i> -->
+
+        <p class="h3 text-center mb-5">Choosing between FCL and LCL</p>
+        
+        <img src="/images/ocenfreightload.webp" alt="">
+      </div>
+    </div>
+  </div>
+  <footer class="footer-area footer--light pt-5">
+    <div class="footer-big">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="footer-widget">
+              <div class="widget-about">
+                <ul class="contact-details">
+                  <li><img src="/images/unicex2.png" alt="" class="img-fluid text-center" width="100px"
+                      height="100px" /></li>
+                  <li>
+                    <a href="tel:344-755-111"><i class="fas fa-phone mr-2"></i> Call Us: +23470567129</a>
+                  </li>
+                  <li>
+                    <a href="mailto:unicex.co@gmail.com"><i class="fas fa-envelope mr-2"></i>unicex.co@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer-widget">
+              <div class="footer-menu footer-menu--1">
+                <ul>
+                  <li>
+                    <h4 class="footer-widget-title">Quick Links</h4>
+                  </li>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-6">
+            <div class="footer-widget">
+              <div class="footer-menu">
+                <ul>
+                  <li>
+                    <h4 class="footer-widget-title">Company</h4>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Webmail</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="footer-widget">
+              <div class="footer-menu no-padding">
+                <ul>
+                  <li>
+                    <h4 class="footer-widget-title">Services</h4>
+                  </li>
+                  <li>
+                    <a href="#">Air Freight</a>
+                  </li>
+                  <li>
+                    <a href="#">Ocean Freight</a>
+                  </li>
+                  <li>
+                    <a href="#">Warehousing</a>
+                  </li>
+                  <li>
+                    <a href="#">Logistics Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Travels & Tours</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-      <section class="hero">
-        <div class="container">
-          <h1 class="headermain">About Us</h1>
-          <p class="">Large enough to handle small enough to care</p>
-          <!-- <a href="quote.html" class="btn">Request a Quote</a> -->
+      </div>
+    </div>
+
+    <div class="mini-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-text">
+              <p>© 2021 <a href="#">Unicex.co</a>. All rights reserved.</p>
+            </div>
+
+            <div class="go_top">
+              <span class="icon-arrow-up"></span>
+            </div>
+          </div>
         </div>
-      </section>
-    </header> 
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="path/to/particles.min.js"></script>
+<script src="/jquery-3.6.0.min.js"></script>
+<script src="/script.js"></script>
+<script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+
 </html>

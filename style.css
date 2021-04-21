@@ -11,6 +11,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* utilities */
+
+.mainheader1{
+font-weight: 500;
+font-size: 25px;
+}
+.mainheader2{
+font-weight: 300;
+font-size: 25px;
+}
+
+.mainparagraph{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* end */
+
 .nav-link {
   text-decoration: none;
   color: rgb(252, 252, 252);
@@ -21,7 +39,8 @@ html {
 }
 
 nav {
-  background-color: rgba(23, 21, 27, 0.1);
+  background-color: #000;
+  /* background-color: rgba(23, 21, 27, 0.1); */
   z-index: 10;
   /* position: sticky; */
 }
@@ -103,7 +122,7 @@ header {
 }
 
 .hero {
-  height: 100vh;
+  height: 70vh;
   /* background-image: url(/images/truckwithmountainview.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +137,7 @@ header {
   z-index: 3;
 }
 .heroaboutus {
-  height: 50vh;
+  height: 40vh;
   /* background-image: url(/images/truckwithmountainview.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +173,7 @@ header {
   min-height: 60vh;
   display: flex;
   overflow-x: hidden;
-  background-color: #e7e8ed;
+  background-color: #fff;
   /* background-image: url(/images/yellowforklift.png);
   background-repeat: no-repeat;
   background-position: bottom -40px right -100px; */
@@ -203,18 +222,15 @@ header {
 .gridcontent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  position: relative;
 }
 
 .readmore {
   color: var(--red);
+  text-decoration: none;
 }
 
-.airfreight {
-  position: relative;
-  z-index: 2;
-  background: url(images/grid2.jpg);
-  background-size: cover;
+.logistics, .airfreight, .oceanfreight, .warehouse {
+  background-color: #000;
   color: #fff;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
@@ -223,51 +239,19 @@ header {
   transition: 0.5s;
 }
 
-.oceanfreight {
-  position: relative;
-  z-index: 2;
-  background: url(images/shippingtothesunset.jpg);
-  background-size: cover;
-  color: #fff;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.warehouse {
-  position: relative;
-  z-index: 2;
-  background: url(images/grid1.jpg);
-  background-size: cover;
-  color: #fff;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.logistics {
-  position: relative;
-  z-index: 2;
-  background: url(images/getquote2.jpg);
-  background-size: cover;
-  color: #fff;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
+
 
 .airfreight:hover,
 .oceanfreight:hover,
 .warehouse:hover,
 .logistics:hover {
+  color: #000;
+  background-color: #fff;
   transform: scaleY(1.1);
+  cursor: pointer;
 }
 
-.airfreight::before,
+/* .airfreight::before,
 .oceanfreight::before,
 .warehouse::before,
 .logistics::before {
@@ -286,7 +270,7 @@ header {
 .logistics::before:hover {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -3;
-}
+} */
 
 .getquote {
   background: url(images/getquote1.jpg);
@@ -295,7 +279,7 @@ header {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   font-family: Arial, Helvetica;
   letter-spacing: 0.02em;
   font-weight: 400;
@@ -306,7 +290,7 @@ header {
   position: relative;
   max-width: 450px;
   max-height: 650px;
-  top: calc(50% - 175px);
+  top: calc(50% - 255px);
   left: calc(50% - 175px);
   background: inherit;
   border-radius: 2px;
@@ -491,10 +475,10 @@ h6 {
 .footer-big ul li {
   color: #898b96;
 }
-.footer-menu {
+/* .footer-menu {
   padding-left: 48px;
-}
-.footer-menu ul li a {
+} */
+.footer-area ul li a {
   font-size: 12px;
   line-height: 23px;
   -webkit-transition: 0.3s;
@@ -636,15 +620,27 @@ h6 {
   font-weight: 300;
 }
 
-.airfreightdetails p {
+.paragraphconstant {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.textgray{
   color: #898b96;
 }
 
+.servicestop img{
+object-fit: cover;
+width: 100%;
+height: 400px;
+}
 
 /* about us */
 
 .aboutuscontentmain{
-  height: 100vh;
+  height: 150vh;
+  background: #000;
+  color: #bbbbbb;
 }
 
 .aboutusrow{
@@ -666,7 +662,7 @@ h6 {
 /*end  */
 .maintext {
   color: #192027 !important;
-  font-size: 40px;
+  font-size: 30px;
   border-bottom: 2px solid var(--red);
 }
 
@@ -740,11 +736,11 @@ li {
   }
 
   .hero {
-    height: 65vh;
+    /* height: 65vh; */
     background-image: url(/images/header1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    color: #fff;
+    background-position: bottom;
+    /* color: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;

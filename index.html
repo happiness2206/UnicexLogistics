@@ -47,7 +47,7 @@
   </head>
   <body>
     <header class="p-0 m-0">
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top pb-4">
         <button
           class="navbar-toggler"
           type="button"
@@ -308,13 +308,14 @@
       </section>
     </div>
     </header>
-
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,181.3C384,192,480,192,576,197.3C672,203,768,213,864,186.7C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,224L60,208C120,192,240,160,360,160C480,160,600,192,720,213.3C840,235,960,245,1080,229.3C1200,213,1320,171,1380,149.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     <div
       class="container-fluid-sm aboutuscontent"
       id="aboutus"
     >
       <section class="px-5 mx-md-5" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-        <div class="h2 mt-5 pt-3 pb-0">About Us</div>
+        <div class="h2 mt-5 pt-5 pb-0">About Us</div>
         <hr class="line" />
         <p class="uk-animation-slide-left-medium">
           Unicorn Express Logistics LLC is a contemporary international freight
@@ -329,7 +330,7 @@
           >View Details <i class="fa fa-arrow-right"></i>
         </a>
       </section>
-      <div class="mt-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+      <div class="mt-5 pt-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
         <div class="bottomaboutuscontent shadow p-4">
           <div class="h2 pb-0 text-center pb-3">WHY CHOOSE US?</div>
           <div class="row pt-4">
@@ -358,7 +359,7 @@
         <!-- <img src="images/yellowforklift.png" alt="" /> -->
       </div>
     </div>
-
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L120,101.3C240,139,480,213,720,250.7C960,288,1200,288,1320,288L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
     <section class="gridcontent container-fluid-sm" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
       <div class="airfreight">
         <div class="my-5 pt-5 mx-md-5">
@@ -419,10 +420,9 @@
 
     <div
       class="getquote container-fluid-sm"
-      uk-scrollspy="cls: uk-animation-shake; repeat: true"
       id="getquote"
     >
-      <div class="row blurred-box">
+      <div class="row blurred-box" uk-scrollspy="cls: uk-animation-fade; repeat: true">
         <form
           action="https://formspree.io/f/xoqppkdo"
           class="formcontent p-5 w-100"
@@ -475,7 +475,7 @@
       </form> -->
     </div>
 
-    <div class="uk-animation-slide-bottom maincounter py-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+    <div class="maincounter py-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
       <div class="counter-container">
         <i class="fas fa-boxes"></i>
         <div class="counter" data-target="300"></div>
@@ -518,7 +518,7 @@
                   class="user-image"
                 />
                 <div class="user-details text-center">
-                  <h4 class="username mt-3">John Smith</h4>
+                  <p class="h4 username mt-3">John Smith</p>
                   <p class="role">Amazon Shopper</p>
                 </div>
               </div>
@@ -538,7 +538,7 @@
                   class="user-image"
                 />
                 <div class="user-details">
-                  <h4 class="username mt-3">Mary Adeboye</h4>
+                  <p class="h4 username mt-3">Mary Adeboye</p>
                   <p class="role">Jumia Shopper</p>
                 </div>
               </div>
@@ -549,18 +549,18 @@
     </div>
     <div class="container-fluid-sm py-5 px-5">
       <div id="contactus mt-4">
-        <h4>Want to discuss how we can work together?</h4>
+        <h4 class="mainheader1">Want to discuss how we can work together?</h4>
         <hr class="line" />
         <div class="row mt-5">
           <div class="col-md-6">
-            <p class="h2">Get in touch</p>
+            <p class="mainheader2">Get in touch</p>
           </div>
           <div class="col-md-6">
             <div class="container">
               <div>
-                <p class="h2">Subscribe to our news letter</p>
+                <p class="mainheader2">Subscribe to our news letter</p>
               </div>
-              <h6 class="font-alt">Get the latest updates delivered to your Email address</h6>
+              <p class="mainparagraph text-dark p-0 m-0">Get the latest updates delivered to your Email address</p>
               <br><br>
               <form class="form-subscribe" action="#">
                 <div class="input-group">
@@ -579,22 +579,18 @@
     <footer class="footer-area footer--light pt-5">
       <div class="footer-big">
         <!-- start .container -->
-        <div class="container-fluid">
-          <div class="row px-5">
-            <div class="col-md-3 col-sm-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
               <div class="footer-widget">
-                <div class="">
-                  <img src="images/unicex2.png" alt="" class="img-fluid text-center" width="100px" height="100px" />
+                <div class="widget-about">
                   <ul class="contact-details">
+                    <li><img src="images/unicex2.png" alt="" class="img-fluid text-center" width="100px" height="100px" /></li>
                     <li>
-                      <span class="icon-earphones"></span> Call Us:
-                      <a href="tel:344-755-111">+23470567129</a>
+                      <a href="tel:344-755-111"><i class="fas fa-phone mr-2"></i> Call Us: +23470567129</a>
                     </li>
                     <li>
-                      <span class="icon-envelope-open"></span>
-                      <a href="mailto:unicex.co@gmail.com"
-                        >unicex.co@gmail.com</a
-                      >
+                      <a href="mailto:unicex.co@gmail.com"><i class="fas fa-envelope mr-2"></i>unicex.co@gmail.com</a>
                     </li>
                   </ul>
                 </div>
@@ -602,11 +598,11 @@
               <!-- Ends: .footer-widget -->
             </div>
             <!-- end /.col-md-4 -->
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu footer-menu--1">
-                  <div class="ml-3 footer-widget-title">Quick Links</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Quick Links</h4></li>
                     <li>
                       <a href="#">Home</a>
                     </li>
@@ -626,12 +622,12 @@
               <!-- Ends: .footer-widget -->
             </div>
             <!-- end /.col-md-3 -->
-
-            <div class="col-md-3 col-sm-4">
+  
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu">
-                  <div class="ml-3 footer-widget-title">Company</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Company</h4></li>
                     <li>
                       <a href="#">About Us</a>
                     </li>
@@ -648,12 +644,12 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+  
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu no-padding">
-                  <div class="ml-3 footer-widget-title">Services</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Services</h4></li>
                     <li>
                       <a href="#">Air Freight</a>
                     </li>
@@ -670,11 +666,11 @@
                       <a href="#">Travels & Tours</a>
                     </li>
                     <!-- <li>
-                      <a href="#">Buyers Faq</a>
-                    </li>
-                    <li>
-                      <a href="#">Sellers Faq</a>
-                    </li> -->
+                          <a href="#">Buyers Faq</a>
+                        </li>
+                        <li>
+                          <a href="#">Sellers Faq</a>
+                        </li> -->
                   </ul>
                 </div>
               </div>
@@ -682,7 +678,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="mini-footer">
         <div class="container">
           <div class="row">
@@ -690,7 +686,7 @@
               <div class="copyright-text">
                 <p>© 2021 <a href="#">Unicex.co</a>. All rights reserved.</p>
               </div>
-
+  
               <div class="go_top">
                 <span class="icon-arrow-up"></span>
               </div>
@@ -699,9 +695,6 @@
         </div>
       </div>
     </footer>
-    <!-- <script>
-      new WOW().init();
-    </script> -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

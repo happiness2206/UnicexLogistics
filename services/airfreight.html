@@ -27,11 +27,7 @@
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
   </head>
   <body>
     <header>
@@ -168,7 +164,7 @@
                           <a class="text-light py-2" href="#"
                             ><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a
                           >
-                          <a class="text-light py-2" href="#"
+                          <a class="text-light py-2" href="/services/oceanfreight.html"
                             ><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a
                           >
                           <a class="text-light py-2" href="#"
@@ -186,71 +182,20 @@
               </div>
             </ul>
           </div>
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link navbar-brand" href="/index.html">
-                <img
-                  src="images/whitelogo.svg"
-                  width="70"
-                  height="50"
-                  alt="logo image"
-                  class="logoimage"
-                />
-                <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="/aboutus.html">About us</a>
-            </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#contactus">Contact</a>
-            </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#getquote">Get a Quote</a>
-            </li>
-            <li class="nav-item mt-md-2 dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Our Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/services/airfreight.html"
-                  >Air Freight</a
-                >
-                <a class="dropdown-item" href="/services/oceanfreight.html"
-                  >Ocean Freight</a
-                >
-                <a class="dropdown-item" href="#">Expedited</a>
-              </div>
-            </li>
-          </ul> -->
-
-          <!-- <div class="callus d-flex justify-content-center">
-            <a href="tel:23492891999" class="nav-link">
-              <i class="fas fa-phone-alt pr-4"></i>Call us at 234801111111</a
-            >
-          </div> -->
         </div>
       </nav>
-      <section class="hero" style="height: 10vh"></section>
+      <section class="heroaboutus">
+        <div class="container text-center pt-5" uk-scrollspy="cls: uk-animation-slide-fade; repeat: true">
+          <p class="h1">Services</p>
+          <!-- <p class="">Large enough to handle small enough to care</p> -->
+          <!-- <a href="quote.html" class="btn">Request a Quote</a> -->
+        </div>
+      </section>
     </header>
     <div class="container-fluid pl-5 ml-3 servicessection">
       <!-- <h1 class="servicesheader text-center">Services</h1> -->
       <div class="row border-bottom">
-        <ul class="col-md-2 p-0 m-0">
+        <ul class="col-md-2 p-0 m-0" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
           <li class="py-4">
             <a href="#" class="maintext pb-3">Air Frieght</a>
           </li>
@@ -258,9 +203,9 @@
           <li class="py-4"><a href="#">Warehousing</a></li>
           <li class="py-4"><a href="#">Logistics</a></li>
         </ul>
-        <div class="col-md-4 px-5 text-justify py-5 border-left">
+        <div class="col-md-4 px-5 text-justify py-5 border-left" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
           <!-- <h6>Air Freight</h6> -->
-          <p>
+          <p class="paragraphconstant">
             We provide superb air freight services by leveraging premium
             partnerships with airlines. We analyze each shipping request and
             provide a logistics plan tailored to your needs. Thus, providing an
@@ -268,7 +213,7 @@
             delivery to your doorstep.
           </p>
         </div>
-        <div class="col p-0 m-0">
+        <div class="col p-0 m-0" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
           <img src="/images/grid2.jpg" alt="" class="img-fluid" />
         </div>
       </div>
@@ -283,63 +228,23 @@
           </p>
         </div> -->
       <div class="airfreightdetails py-5 mt-5">
-        <div class="text-center">
+        <div class="text-center" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">
           <i class="fas fa-exclamation-triangle fa-4x colorred"></i>
-        </div>
-        <h3 class="text-center colorred">Prohibited Items for Air Freight</h3>
-        <p class="text-center">We do this for the safety of your items</p>
+        
+        <p class="h3 text-center colorred">Prohibited Items for Air Freight</p>
+        <p class="text-center text-dark">We do this for the safety of your items</p>
+      </div>
         <div class="container mt-5 pt-5 row justify-content-center m-auto">
-          <!-- <div class="col">
-            <ul>
-  
-              <li></li>
-              <li></li>
-            </ul>
-          </div> -->
-          <!-- <div class="row justify-content-center align-items-center">
-            <div class="col">
-            <img
-              src="/images/undraw_warning_cyit.svg"
-              alt=""
-              class="circle img-fluid"
-            />
-          </div>
-            <div class="col p-0 m-0">
-              <li class="text-center mt-4">
-                1. Explosives: fireworks and firecrackers, detonating fuses, etc.;
-              </li>
-              <li class="py-2 mb-5">
-                2. Gases: such as compressed gas, dry ice, fire extinguisher, gas
-                cartridge, inflated ball, respirator, explosive automotive airbag,
-                aerosol, gas lighter, gas cylinder, and lamp bulb etc.;
-              </li>
-              <li class="py-2 my-5">
-                3. Flammable liquid: e.g. paint, gasoline, alcohol, engine oil,
-                camphor oil, engine starting fluid, turpentine, thinner, mucilage,
-                perfume, insect sprays, air freshener etc.
-              </li>
-              <li class="py-2 mt-5">
-                4. Toxic and infectious items: pesticides, lithium batteries
-              </li>
-              <li class="py-2 mb-5 text-center w-50">
-                5. Flammable solid, pyrophoric substances, and substances that emit
-                flammable gases in contact with water: e.g. activated carbon,
-                titanium powder, copra, castor products, rubber debris, safety
-                matches, dry white phosphorus , dry yellow phosphorus, magnesium
-                powder, and solid gum, etc.
-              </li>
-            </div>
-        </div> -->
         <div class="row justify-content-center">
   
-          <div class="col-md-6 p-0 m-0">
+          <div class="col-md-6 p-0 m-0" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
           <img
           src="/images/undraw_warning_cyit.svg"
           alt=""
           class="img-fluid"
         />
       </div>
-<ul class="col-md-6">
+<ul class="col-md-6" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
   <li class="mt-4">
    <strong>1. Explosives:</strong>  fireworks and firecrackers, detonating fuses, etc.;
   </li>
@@ -393,22 +298,18 @@
     <footer class="footer-area footer--light pt-5">
       <div class="footer-big">
         <!-- start .container -->
-        <div class="container-fluid">
-          <div class="row px-5">
-            <div class="col-md-3 col-sm-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
               <div class="footer-widget">
-                <div class="">
-                  <img src="/images/unicex2.png" alt="" class="img-fluid text-center" width="100px" height="100px" />
+                <div class="widget-about">
                   <ul class="contact-details">
+                    <li><img src="/images/unicex2.png" alt="" class="img-fluid text-center" width="100px" height="100px" /></li>
                     <li>
-                      <span class="icon-earphones"></span> Call Us:
-                      <a href="tel:344-755-111">+23470567129</a>
+                      <a href="tel:344-755-111"><i class="fas fa-phone mr-2"></i> Call Us: +23470567129</a>
                     </li>
                     <li>
-                      <span class="icon-envelope-open"></span>
-                      <a href="mailto:unicex.co@gmail.com"
-                        >unicex.co@gmail.com</a
-                      >
+                      <a href="mailto:unicex.co@gmail.com"><i class="fas fa-envelope mr-2"></i>unicex.co@gmail.com</a>
                     </li>
                   </ul>
                 </div>
@@ -416,11 +317,11 @@
               <!-- Ends: .footer-widget -->
             </div>
             <!-- end /.col-md-4 -->
-            <div class="col-md-3 col-sm-4">
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu footer-menu--1">
-                  <div class="ml-3 footer-widget-title">Quick Links</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Quick Links</h4></li>
                     <li>
                       <a href="#">Home</a>
                     </li>
@@ -440,12 +341,12 @@
               <!-- Ends: .footer-widget -->
             </div>
             <!-- end /.col-md-3 -->
-
-            <div class="col-md-3 col-sm-4">
+  
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu">
-                  <div class="ml-3 footer-widget-title">Company</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Company</h4></li>
                     <li>
                       <a href="#">About Us</a>
                     </li>
@@ -462,12 +363,12 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-3 col-sm-4">
+  
+            <div class="col-md-3 col-6">
               <div class="footer-widget">
                 <div class="footer-menu no-padding">
-                  <div class="ml-3 footer-widget-title">Services</div>
                   <ul>
+                    <li><h4 class="footer-widget-title">Services</h4></li>
                     <li>
                       <a href="#">Air Freight</a>
                     </li>
@@ -484,11 +385,11 @@
                       <a href="#">Travels & Tours</a>
                     </li>
                     <!-- <li>
-                      <a href="#">Buyers Faq</a>
-                    </li>
-                    <li>
-                      <a href="#">Sellers Faq</a>
-                    </li> -->
+                          <a href="#">Buyers Faq</a>
+                        </li>
+                        <li>
+                          <a href="#">Sellers Faq</a>
+                        </li> -->
                   </ul>
                 </div>
               </div>
@@ -496,7 +397,7 @@
           </div>
         </div>
       </div>
-
+  
       <div class="mini-footer">
         <div class="container">
           <div class="row">
@@ -504,7 +405,7 @@
               <div class="copyright-text">
                 <p>© 2021 <a href="#">Unicex.co</a>. All rights reserved.</p>
               </div>
-
+  
               <div class="go_top">
                 <span class="icon-arrow-up"></span>
               </div>
@@ -524,4 +425,7 @@
   <script src="/jquery-3.6.0.min.js"></script>
   <script src="/script.js"></script>
   <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
 </html>
