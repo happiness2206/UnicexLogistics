@@ -25,6 +25,7 @@ font-size: 25px;
 .mainparagraph{
   font-size: 14px;
   font-weight: 300;
+  /* line-height: 12px; */
 }
 .mainparagraph2{
   font-size: 14px;
@@ -169,11 +170,6 @@ header {
   display: flex;
   overflow-x: hidden;
   background-color: #fff;
-  /* background-image: url(/images/yellowforklift.png);
-  background-repeat: no-repeat;
-  background-position: bottom -40px right -100px; */
-  /* position: relative; */
-  /* justify-content: center; */
 }
 
 .aboutuscontent section {
@@ -199,10 +195,6 @@ header {
 
 .bottomaboutuscontent {
   list-style-type: none;
-
-  /* width: 500px; */
-  /* position: absolute;
-  bottom: 20px; */
 }
 
 .bottomaboutuscontent i {
@@ -242,7 +234,7 @@ header {
 .logistics:hover {
   color: #000;
   background-color: #fff;
-  transform: scaleY(1.1);
+  transform: scaleY(1.05);
   cursor: pointer;
 }
 
@@ -268,7 +260,7 @@ header {
 } */
 
 .getquote {
-  background: url(images/getquote1.jpg);
+  background: url(images/header3.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -376,7 +368,7 @@ header {
 
 .testimonial {
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 35px;
   font-weight: 300;
   text-align: center;
