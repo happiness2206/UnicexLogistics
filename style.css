@@ -276,7 +276,7 @@ header {
 } */
 
 .getquote {
-  background: url(images/header3.jpg);
+  background: url(images/brano-yTsmnnpXRng-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -604,6 +604,7 @@ h6 {
   list-style-type: none;
 }
 
+
 .servicessection a {
   color: #898b96;
 }
@@ -641,6 +642,7 @@ h6 {
   height: 200vh;
   background: #000;
   color: #bbbbbb;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
