@@ -752,9 +752,9 @@ li {
 
   .hero {
     /* height: 65vh; */
-    background-image: url(/images/header1.jpg);
+    background-image: url(/images/sectionheroimage.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     /* color: #fff; */
     display: flex;
     justify-content: center;
@@ -765,7 +765,8 @@ li {
   }
 
   .headermain {
-    font-size: 35px;
+    font-size: 45px;
+    line-height: 50px;
   }
   .maincounter {
     font-size: 20px;
