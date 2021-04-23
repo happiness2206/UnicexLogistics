@@ -13,23 +13,24 @@
 
 /* utilities */
 
-.mainheader1{
-font-weight: 500;
-font-size: 25px;
+.mainheader1 {
+  font-weight: 500;
+  font-size: 25px;
 }
-.mainheader2{
-font-weight: 300;
-font-size: 25px;
+.mainheader2 {
+  font-weight: 300;
+  font-size: 25px;
 }
 
-.mainparagraph{
+.mainparagraph {
   font-size: 14px;
   font-weight: 300;
   /* line-height: 12px; */
 }
-.mainparagraph2{
+.mainparagraph2 {
   font-size: 14px;
   font-weight: 400;
+  line-height: 30px;
 }
 
 /* end */
@@ -148,6 +149,12 @@ header {
   z-index: 3;
 }
 
+.sectionherounicornimage {
+  height: 100%;
+  object-fit: contain;
+  overflow: scroll;
+}
+
 .righthero {
   background-color: #fff;
   height: 100%;
@@ -216,7 +223,10 @@ header {
   text-decoration: none;
 }
 
-.logistics, .airfreight, .oceanfreight, .warehouse {
+.logistics,
+.airfreight,
+.oceanfreight,
+.warehouse {
   background-color: #000;
   color: #fff;
   transition: height 0.5s;
@@ -225,8 +235,6 @@ header {
   overflow: hidden;
   transition: 0.5s;
 }
-
-
 
 .airfreight:hover,
 .oceanfreight:hover,
@@ -302,7 +310,6 @@ header {
   z-index: 2;
   /* width: 900px; */
 }
-
 
 #sendquote {
   background-color: var(--red);
@@ -526,7 +533,7 @@ h6 {
   color: var(--red);
 }
 
-.airfreightdetails{
+.airfreightdetails {
   font-weight: 400;
   font-size: 12px;
 }
@@ -542,7 +549,6 @@ h6 {
   border: none;
   width: 350px;
   height: 350px;
-
 }
 
 /* .wrapper {
@@ -552,7 +558,7 @@ h6 {
 } */
 
 .wrapper li {
-  line-height: 1.6; 
+  line-height: 1.6;
   text-align: justify;
   margin: 0;
   font-size: 14px;
@@ -564,7 +570,7 @@ h6 {
   height: 500px;
   -webkit-shape-outside: circle();
   shape-outside: circle();
-  shape-margin:20px;
+  shape-margin: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -579,7 +585,6 @@ h6 {
   margin-left: 20px;
   margin-bottom: 10px;
 } */
-
 
 .servicesheader {
   color: var(--red);
@@ -612,37 +617,37 @@ h6 {
   font-size: 16px;
 }
 
-.textgray{
+.textgray {
   color: #898b96;
 }
 
-.servicestop img{
-object-fit: cover;
-width: 100%;
-height: 400px;
+.servicestop img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
 }
 
 /* about us */
 
-.aboutuscontentmain{
+.aboutuscontentmain {
   height: 150vh;
   background: #000;
   color: #bbbbbb;
 }
 
-.aboutusrow{
+.aboutusrow {
   background: #192027;
   height: 50vh;
 }
-.aboutusleftcolumn{
+.aboutusleftcolumn {
   background: #192027;
   background-image: url(/images/hunters-race-MYbhN8KaaEc-unsplash.jpg);
   background-size: cover;
 }
-.aboutusleftcolumn img{
+.aboutusleftcolumn img {
   object-fit: cover;
 }
-.aboutusrightcolumn{
+.aboutusrightcolumn {
   background: #e6e6e6;
 }
 
