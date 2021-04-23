@@ -247,8 +247,9 @@ header {
 .oceanfreight:hover,
 .warehouse:hover,
 .logistics:hover {
-  color: #000;
-  background-color: #fff;
+  /* color: #000;
+  opacity: 0.6; */
+  border-bottom: 2px solid var(--red);
   transform: scaleY(1.05);
   cursor: pointer;
 }
@@ -637,9 +638,10 @@ h6 {
 /* about us */
 
 .aboutuscontentmain {
-  height: 250vh;
+  height: 200vh;
   background: #000;
   color: #bbbbbb;
+  overflow-x: hidden;
 }
 
 .aboutusrow {
