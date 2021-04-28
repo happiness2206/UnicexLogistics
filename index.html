@@ -44,10 +44,10 @@
     <nav class="navbar navbar-expand-lg fixed-top pb-4">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon mt-1"><i class="fas fa-bars text-light"></i></span>
+        <span class="navbar-toggler-icon mt-2 pt-1"><i class="fas fa-bars text-light"></i></span>
       </button>
 
-      <li class="nav-item mt-3">
+      <li class="nav-item mt-lg-3">
         <a class="" href="#">
           <img src="images/whitelogo.svg" width="40" height="40" alt="logo image" class="" />
           <span class="sr-only">(current)</span></a>
@@ -71,9 +71,6 @@
             <li class="nav-item mt-md-2">
               <a class="nav-link" href="#contactus">Contact</a>
             </li>
-            <li class="nav-item mt-md-2">
-              <a class="nav-link" href="#getquote">Get a Quote</a>
-            </li>
             <li class="nav-item mt-md-2 dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -87,24 +84,22 @@
             </li>
           </ul>
         </div>
-        <ul class="navbarmobile mainparagraph">
+        <ul class="navbarmobile mainparagraph pr-4">
           <div class="navitemdropdownspacing">
             <div class="navitemdropdowns w-100" id="accordionExample">
-              <li class="nav-item mt-md-2">
+              <li class="nav-item mt-2 py-2 border-bottom pr-2">
                 <a class="nav-link" href="/index.html">Home</a>
               </li>
-              <li class="nav-item mt-md-2">
+              <li class="nav-item mt-2 py-2 border-bottom">
                 <a class="nav-link" href="/aboutus.html">About us</a>
               </li>
-              <li class="nav-item mt-md-2">
+              <li class="nav-item mt-2 py-2 border-bottom">
                 <a class="nav-link" href="#">Location</a>
               </li>
-              <li class="nav-item mt-md-2">
+              <li class="nav-item mt-2 py-2 border-bottom">
                 <a class="nav-link" href="#contactus">Contact</a>
               </li>
-              <li class="nav-item mt-md-2 mb-0 pb-0">
-                <a class="nav-link" href="#getquote">Get a Quote</a>
-              </li>
+ 
               <li class="nav-item mt-0 pt-0">
                 <div class="p-o m-0">
                   <div id="dropdowncourseheadingFour">
@@ -114,18 +109,18 @@
                         aria-controls="dropdowncoursecollapseFive">
                         <div class="d-flex text-light w-100">
                           <p class="pl-3">Our Services</p>
-                          <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i>
+                          <!-- <i class="fas fa-arrow-down mr-3 ml-3 mt-1"></i> -->
                         </div>
                       </a>
                     </p>
                   </div>
-                  <div class="collapse ml-5 pl-1" id="dropdowncoursecollapseFive"
+                  <div class="collapse show ml-4 pl-1 py-2" id="dropdowncoursecollapseFive"
                     aria-labelledby="dropdowncourseheadingFive" data-parent="#accordionExample">
                     <div class="d-flex flex-column">
-                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a>
-                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a>
-                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a>
-                      <a class="text-light py-2" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a>
+                      <a class="text-light py-1" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Air Freight</a>
+                      <a class="text-light py-1" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Ocean Freight</a>
+                      <a class="text-light py-1" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Expedited</a>
+                      <a class="text-light py-1" href="#"><i class="fas fa-arrow-right fa-xs mr-2"></i>Logistics</a>
                     </div>
                   </div>
                 </div>
@@ -267,41 +262,27 @@
       <form action="https://formspree.io/f/xoqppkdo" class="formcontent p-5 w-100" method="POST">
         <div class="mainheader2 text-center">Get A Quote</div>
         <hr class="line text-center">
-        <div class="forminputs mainparagraph">
+        <div class="forminputs mainparagraph mb-3">
           <label for="nameinput">Name</label>
           <input type="text" class="form-control" name="message" />
         </div>
-        <div class="forminputs mainparagraph">
+        <div class="forminputs mainparagraph mb-3">
           <label for="emailinput">Email</label>
           <input type="text" class="form-control" name="_replyto" />
         </div>
-        <div class="forminputs mainparagraph">
+        <div class="forminputs mainparagraph mb-3">
           <label for="phonenumberinput">Phone Number</label>
           <input type="text" class="form-control" name="phonenumber" />
         </div>
-        <div class="forminputs mainparagraph">
+        <div class="forminputs mainparagraph mb-3">
           <label for="messageinput">Message</label>
           <textarea type="text" class="md-textarea form-control" name="message"></textarea>
         </div>
-        <div class="text-center mt-5 pt-1" type="submit" style="-webkit-appearance: none">
+        <div class="text-center mt-md-5 pt-1" type="submit" style="-webkit-appearance: none">
           <button class="btn btn-lg px-4 mainparagraph" id="sendquote">Send</button>
         </div>
       </form>
     </div>
-    <!-- <form action="https://formspree.io/f/xoqppkdo" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="_replyto" />
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-
-        your other form fields go here 
-
-        <button type="submit">Send</button>
-      </form> -->
   </div>
 
   <div class="maincounter py-5" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">

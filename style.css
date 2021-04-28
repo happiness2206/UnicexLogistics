@@ -305,7 +305,7 @@ header {
   position: relative;
   max-width: 450px;
   max-height: 650px;
-  top: calc(50% - 255px);
+  top: calc(50% - 275px);
   left: calc(50% - 175px);
   background: inherit;
   border-radius: 2px;
