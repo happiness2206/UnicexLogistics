@@ -26,6 +26,10 @@
   font-size: 14px;
   font-weight: 300;
 }
+.mainparagraphsmall {
+  font-size: 10px;
+  font-weight: 300;
+}
 .mainparagraph2 {
   font-size: 14px;
   font-weight: 400;
@@ -292,7 +296,7 @@ a.readmore {
 } */
 
 .getquote {
-  background: url(images/brano-yTsmnnpXRng-unsplash.jpg);
+  background: url(images/pexels-pixabay-434337.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -339,6 +343,8 @@ a.readmore {
   background-color: var(--red);
   color: #fff;
   -webkit-appearance: none;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .counter {
@@ -399,7 +405,7 @@ a.readmore {
 
 .testimonial {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 35px;
   font-weight: 300;
   text-align: center;
@@ -417,15 +423,6 @@ a.readmore {
   height: 75px;
   width: 75px;
   object-fit: cover;
-}
-
-.user-details h4 {
-  font-size: 20px;
-  text-align: center;
-}
-.user-details p {
-  font-size: 15px;
-  text-align: center;
 }
 
 .progress-bar {
