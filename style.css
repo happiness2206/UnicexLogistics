@@ -267,34 +267,10 @@ a.readmore {
 .oceanfreight:hover,
 .warehouse:hover,
 .logistics:hover {
-  /* color: #000;
-  opacity: 0.6; */
   border-bottom: 2px solid var(--red);
   transform: scaleY(1.05);
   cursor: pointer;
 }
-
-/* .airfreight::before,
-.oceanfreight::before,
-.warehouse::before,
-.logistics::before {
-  content: '';
-  position: absolute;
-  top: 100;
-  left: 0;
-  width: 100%;
-  height: 101%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -3;
-}
-.airfreight::before:hover,
-.oceanfreight::before:hover,
-.warehouse::before:hover,
-.logistics::before:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -3;
-} */
-
 .getquote {
   background: url(images/pexels-pixabay-434337.jpg);
   background-repeat: no-repeat;
